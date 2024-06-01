@@ -20,6 +20,48 @@
     <link href="./static/css/style.css" rel="stylesheet">
 </head>
 
+<ul class="main-menu">
+    <li>
+        <a data-scroll-nav="0" href="/">
+            <span class="m-icon">
+                <i class="bi-house-door"></i>
+            </span>
+            <span class="m-text">Home</span>
+        </a>
+    </li>
+    <li>
+        <a data-scroll-nav="1" href="{{ url_for('blog') }}">
+            <span class="m-icon">
+                <i class="bi-person"></i>
+            </span>
+            <span class="m-text">Blog</span>
+        </a>
+    </li>
+    <!-- <li>
+        <a data-scroll-nav="2" href="#services">
+            <span class="m-icon">
+                <i class="bi-briefcase"></i>
+            </span>
+            <span class="m-text">Services</span>
+        </a>
+    </li> -->
+    <li>
+        <a data-scroll-nav="3" href="{{ url_for('login')}}">
+            <span class="m-icon">
+                <i class="bi-columns"></i>
+            </span>
+            <span class="m-text">Login</span>
+        </a>
+    </li>
+    <li>
+        <a data-scroll-nav="4" href="{{ url_for('contact') }}">
+            <span class="m-icon">
+                <i class="bi-telephone"></i>
+            </span>
+            <span class="m-text">Contact</span>
+        </a>
+    </li>
+</ul>
 <!-- About -->
         <section id="about" data-scroll-index="1" class="section about-section gray-bg-1">
             <div class="container">
