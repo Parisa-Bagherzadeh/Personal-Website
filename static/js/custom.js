@@ -1,12 +1,12 @@
 (function($) {
     "use strict";
     var WEA = {};
-    var plugin_track = './vendor/';
+    var plugin_track = './static/vendor/';
     $.fn.exists = function() {
         return this.length > 0;
     };
 
-
+    static/vendor
 
     /*--------------------
         * Menu Close
