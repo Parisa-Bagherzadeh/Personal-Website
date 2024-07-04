@@ -3,8 +3,13 @@
 This is a simple personal website built using Flask, a Python web framework.  
 
 ### Usage  
+1 - Clone the repository  
 ```
-flask --app app run 
+git clone https://github.com/Parisa-Bagherzadeh/Personal-Website.git
+```
+2 - Run the following command:
+```
+flask run
 ```
   
 ### How to install  
