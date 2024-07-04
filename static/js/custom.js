@@ -202,7 +202,7 @@
                     loop: true,
                     strings: [
                         'Machine Learning Engineer',
-                        ' web Developer'
+                        ' Backend Developer'
                     ],
                     breakLines: false
                 });

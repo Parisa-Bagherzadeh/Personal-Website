@@ -1,68 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- metas -->
-    <meta charset="utf-8">
-    <!-- <meta name="author" content="pxdraft">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="Tapsi - Portfolio Template">
-    <meta name="description" content="Tapsi - Portfolio Template"> -->
-    <!-- title -->
-    <title>Parisa Persnal Website</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <!-- theme css -->
-    <link id="bootstrap" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="./static/css/style.css" rel="stylesheet">
-</head>
-<!-- Body Start -->
+{% extends 'layout.html' %}
 
-<ul class="main-menu">
-    <li>
-        <a data-scroll-nav="0" href="/">
-            <span class="m-icon">
-                <i class="bi-house-door"></i>
-            </span>
-            <span class="m-text">Home</span>
-        </a>
-    </li>
-    <li>
-        <a data-scroll-nav="1" href="/blog">
-            <span class="m-icon">
-                <i class="bi-person"></i>
-            </span>
-            <span class="m-text">Blog</span>
-        </a>
-    </li>
-    <!-- <li>
-        <a data-scroll-nav="2" href="#services">
-            <span class="m-icon">
-                <i class="bi-briefcase"></i>
-            </span>
-            <span class="m-text">Services</span>
-        </a>
-    </li> -->
-    <li>
-        <a data-scroll-nav="3" href="/login">
-            <span class="m-icon">
-                <i class="bi-columns"></i>
-            </span>
-            <span class="m-text">Login</span>
-        </a>
-    </li>
-    <li>
-        <a data-scroll-nav="4" href="/contact">
-            <span class="m-icon">
-                <i class="bi-telephone"></i>
-            </span>
-            <span class="m-text">Contact</span>
-        </a>
-    </li>
-</ul>
-  <!-- contactus -->
+{% block title %}
+{% endblock %}
+
+{% block content %}
+
   <section id="contactus" data-scroll-index="4" class="section contactus-section gray-bg-1">
     <div class="container">
         <div class="row gy-5">
@@ -110,38 +52,39 @@
             <div class="col-lg-7 ps-xl-5">
                 <div class="contact-form">
                     <div class="contact-head">
-                        <h4>Got Ideas? We've got the skills. Let's team up.</h4>
-                        <p>Tell us more about yourself and what you're got in mind.</p>
+                        <h4>Register Form</h4>
+                        <p></p>
                     </div>
                     <form id="contact-form" method="POST">
                         <div class="row gx-3 gy-4">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="form-label">First name</label>
-                                    <input name="Name" id="name" placeholder="Name *" class="form-control" type="text">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="form-label">Your Email</label>
-                                    <input name="Email" id="email" placeholder="Email *" class="form-control" type="email">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label class="form-label">Subject</label>
-                                    <input name="Subject" id="subject" placeholder="Subject *" class="form-control" type="text">
+                                    <label class="form-label">Username</label>
+                                    <input name="Username" id="name" placeholder="Username *" class="form-control" type="text">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="form-label">Your message</label>
-                                    <textarea name="message" id="message" placeholder="Your message *" rows="4" class="form-control"></textarea>
+                                    <label class="form-label">Password</label>
+                                    <input name="Password" id="password" placeholder="Password *" class="form-control" type="password">
                                 </div>
                             </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">Confirm Password</label>
+                                    <input name="Confirm_Password" id="confirm_password" placeholder="Confirm Password *" class="form-control" type="password">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">Email</label>
+                                    <input name="Email" id="email" placeholder="Email *" class="form-control" type="text">
+                                </div>
+                            </div>
+        
                             <div class="col-md-12">
                                 <div class="send">
-                                    <button class="px-btn w-100" type="button" value="Send"> Send Message</button>
+                                    <button class="px-btn w-100" type="submit" value="Send"> Submit</button>
                                 </div>
                             </div>
                         </div>
@@ -151,4 +94,4 @@
         </div>
     </div>
 </section>
-<!-- End contactus -->
+{% endblock %}
