@@ -3,7 +3,7 @@
 This is a simple personal website built using Flask, a Python web framework.  
 
 ### Usage  
-1 - Clone the repository, https://github.com/Parisa-Bagherzadeh/Personal-Website.git  
+1 - Clone the repository:
 ```
 git clone https://github.com/Parisa-Bagherzadeh/Personal-Website.git
 ```  
